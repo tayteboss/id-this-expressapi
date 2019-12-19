@@ -10,7 +10,7 @@ var urlApiKey = process.env.URLAPIKEY;
 const puppeteer = require('puppeteer')
 
 const cors = require('cors')
-const origin = process.env.NODE_ENV === 'production' ? 'http://prod-url.com' : 'http://localhost:3000'
+const origin = process.env.NODE_ENV === 'production' ? 'http://id-this.surge.sh/' : 'http://localhost:3000'
 app.use(cors({ origin }))
 const server = app.listen(PORT)
 
